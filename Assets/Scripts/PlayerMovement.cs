@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private bool onWater;
     [SerializeField] private float runSpeed = 40f;
+
+    [SerializeField] private Rigidbody2D rb;
     float horizontalMove = 0f;
 
     bool jump;
@@ -42,9 +44,16 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("Running", true);
         }
+        else if(onWater)
+        {
+            anim.SetBool("Running", false);
+            rb.velocity = new Vector2(0, .5f);
+        }
         else
         {
             anim.SetBool("Running", false);
         }
+        
+
     }
 }
