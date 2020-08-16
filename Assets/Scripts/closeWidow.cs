@@ -7,7 +7,7 @@ public class closeWidow : MonoBehaviour
 {
     [SerializeField] private GameObject[] layouts;
     private float timer;
-    private float reachT = 5f;
+    private float reachT = 3f;
     private int numberScreens = 0;
     [SerializeField] private int roomNumber;
     [SerializeField] private AudioSource heart;
@@ -24,7 +24,7 @@ public class closeWidow : MonoBehaviour
             timer = 0f;
         }
 
-        if(numberScreens == 7)
+        if(numberScreens == 5)
         {
             isHeart = true;
         }
