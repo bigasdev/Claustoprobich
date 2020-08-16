@@ -20,7 +20,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            jump = true;
+            anim.SetTrigger("Jump");
+            StartCoroutine(realJump());
         }
 
         if(onWater)
@@ -55,5 +56,16 @@ public class PlayerMovement : MonoBehaviour
         }
         
 
+    }
+
+    IEnumerator realJump()
+    {
+        yield return new WaitForSeconds(.15f);
+        jump = true;
+    }
+
+    public void land()
+    {
+        anim.SetTrigger("Fall");
     }
 }
