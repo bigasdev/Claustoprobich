@@ -28,7 +28,7 @@ public class mainMenu : MonoBehaviour
         anim[1].SetTrigger("Credits");
         anim[2].SetTrigger("Credits");
         buttons[2].SetActive(false);
-        buttons[4].SetActive(true);
+        StartCoroutine(creditsAnim());
     }
 
     public void Exit()
@@ -49,5 +49,11 @@ public class mainMenu : MonoBehaviour
             music.Play();
         }
         anim[3].SetTrigger("Music");
+    }
+
+    IEnumerator creditsAnim()
+    {
+        yield return new WaitForSeconds(.5f);
+        buttons[4].SetActive(true);
     }
 }

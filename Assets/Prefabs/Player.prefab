@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 1199918620843787100}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,7 +222,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1199918620843787102}
   anim: {fileID: 1199918620116772820}
+  onWater: 0
   runSpeed: 40
+  rb: {fileID: 0}
 --- !u!1 &1199918620849981727
 GameObject:
   m_ObjectHideFlags: 0
