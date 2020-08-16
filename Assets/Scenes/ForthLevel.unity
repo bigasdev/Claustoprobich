@@ -1316,7 +1316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8199691362783262333, guid: b6d79e9a26fe47846b9fee10b9c79d20, type: 3}
       propertyPath: roomNumber
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6d79e9a26fe47846b9fee10b9c79d20, type: 3}

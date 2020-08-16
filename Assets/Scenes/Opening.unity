@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reachT: 6
-  nextScene: 4
+  nextScene: 11
   needMusic: 1
 --- !u!1 &2022517613
 GameObject:

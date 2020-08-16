@@ -20,4 +20,9 @@ public class endGame : MonoBehaviour
         SceneManager.LoadScene(nextRoom);
     }
 
+    public void IAnim()
+    {
+        StartCoroutine(endGameAnim());
+    }
+
 }
