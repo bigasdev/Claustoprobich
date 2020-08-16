@@ -10,7 +10,8 @@ public class Controller : MonoBehaviour
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f; 
 	[SerializeField] private bool m_AirControl = false;                        
 	[SerializeField] private LayerMask m_WhatIsGround;                        
-	[SerializeField] private Transform m_GroundCheck;                          
+	[SerializeField] private Transform m_GroundCheck;
+	[SerializeField] private Transform sprite;
 
 	const float k_GroundedRadius = .2f; 
 	private bool m_Grounded;            
@@ -83,8 +84,8 @@ public class Controller : MonoBehaviour
 	{
 		m_FacingRight = !m_FacingRight;
 
-		Vector3 theScale = transform.localScale;
+		Vector3 theScale = sprite.localScale;
 		theScale.x *= -1;
-		transform.localScale = theScale;
+		sprite.localScale = theScale;
 	}
 }

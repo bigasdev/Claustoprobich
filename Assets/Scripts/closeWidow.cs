@@ -13,12 +13,11 @@ public class closeWidow : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if(timer >= reachT && numberScreens <= 5)
+        if(timer >= reachT && numberScreens <= 12)
         {           
             layouts[numberScreens].SetActive(true);
             numberScreens += 1;
             timer = 0f;
-            reachT -= 1f;
         }
     }
 }
