@@ -6,7 +6,7 @@ using UnityEngine.Events;
 [RequireComponent(typeof(BoxCollider2D))]
 public class Controller : MonoBehaviour
 {
-	[SerializeField] private float m_JumpForce = 400f;                          
+	[SerializeField] public float m_JumpForce = 400f;                          
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f; 
 	[SerializeField] private bool m_AirControl = false;                        
 	[SerializeField] private LayerMask m_WhatIsGround;                        

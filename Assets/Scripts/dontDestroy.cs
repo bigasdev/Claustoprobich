@@ -5,7 +5,6 @@ using UnityEngine;
 public class dontDestroy : MonoBehaviour
 {
     public static bool musicMute;
-    [SerializeField] private bool isEnd;
     void Start()
     {
         DontDestroyOnLoad(gameObject);

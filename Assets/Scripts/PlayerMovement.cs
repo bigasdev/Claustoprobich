@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            runSpeed = 40f;
+            runSpeed = runSpeed;
         }
 
     }
